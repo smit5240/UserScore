@@ -1,38 +1,119 @@
-.App {
+body{
+  font-family: poppins;
+  background-color: #292727;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.whitebg{
+  background-color: #fff;
+}
+
+.pointno{
+  font-size: 18px;
+  color: #111;
+  line-height: 22px;
+  font-weight: 700;
+}
+.fixpointno {
+  font-size: 18px;
+  color: #fff;
+  line-height: 22px;
+  font-weight: 700;
+}
+.point{
+  font-size: 14px;
+  color: #999;
+  font-weight: 400;
+}
+.fixpoint {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.name{
+    font-size: 18px;
+      color: #111;
+      line-height: 45px;
+      font-weight: 500;
+}
+.fixname {
+  font-size: 18px;
+  color: #fff;
+  line-height: 45px;
+  font-weight: 500;
+}
+.temp{
+  background-color: #277351;
+}
+.userImage
+{
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.dot
+{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #7272ff;
   text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+.greendot{
+height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: green;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+.reddot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+.greydot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #444;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+.fixonline{
+  position: absolute;
+  top: 33px;
+  right: 3px;
+}
+.fixbg{
+  background-color: rgb(242, 249, 251);
+}
+.hoverrow:hover{
+  background-color: #85c2ff !important;
+  color: #fff !important;
+  transition: .4s;
+}
+.hoverrow:hover .point{
+  color: #111;
+}
+.firstRow {
+  background-color: rgb(28, 172, 255);
+  color: #fff !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.redious{
+  border-radius: 50px !important;
 }
