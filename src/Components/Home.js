@@ -4,33 +4,33 @@ import Image from "./Image";
 // import random from "random";
 export default function Home() {
   const [userdata, setUserdata] = useState(jsondata.data);
-  // let temp = [];
+  let temp = [];
   useEffect(() => {
     let doc = jsondata.data.sort(function (a, b) {
       return a.score - b.score;
     });
     setUserdata(doc.reverse());
 
-    //   setInterval(() => {
-    //     updatescore();
-    //   }, 2000);
-    //   // console.log("kjsnchzucsdusdiuhsduhcfhisd--->", userdata);
+    setInterval(() => {
+      updatescore();
+    }, 4000);
+    // console.log("kjsnchzucsdusdiuhsduhcfhisd--->", userdata);
   });
 
-  // let updatescore = () => {
-  //   setInterval(() => {
-  //     jsondata.data.length &&
-  //       jsondata.data.map((item) => {
-  //         temp.push((item.score = Math.floor(Math.random() * 99999)));
-  //       });
-  //   }, 6000);
-  //   setUserdata(temp);
-  //   let doc = temp.sort(function (a, b) {
-  //     return a.score - b.score;
-  //   });
-  //   setUserdata(doc.reverse());
-  //   console.log("dcc---->", userdata);
-  // };
+  let updatescore = () => {
+    // setInterval(() => {
+    jsondata.data.length &&
+      jsondata.data.map((item) => {
+        temp.push((item.score = Math.floor(Math.random() * 99999)));
+      });
+    // }, 6000);
+    setUserdata(temp);
+    let doc = temp.sort(function (a, b) {
+      return a.score - b.score;
+    });
+    setUserdata(doc.reverse());
+    console.log("dcc---->", userdata);
+  };
 
   return (
     <div className="container">
